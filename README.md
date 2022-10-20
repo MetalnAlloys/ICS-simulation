@@ -34,3 +34,5 @@ The following software needs to be installed and running in order to reproduce t
 
 ## Setup topology
 The current topology looks like below as of now.
+
+<img src="/main/ics_image.png" alt="Alt text" >
