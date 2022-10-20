@@ -31,3 +31,6 @@ The following software needs to be installed and running in order to reproduce t
 - gns
   + contains anything needed for gns
 
+
+## Setup topology
+The current topology looks like below as of now.
