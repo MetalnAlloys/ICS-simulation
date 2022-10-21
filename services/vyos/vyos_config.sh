@@ -48,3 +48,7 @@ set nat source rule 100 source address '192.168.0.0/24'
 # Use IP masquerade. This will set the primary IP adress of eth0 as its translation address
 set nat source rule 100 translation address masquerade
 
+
+commit
+exit 
+
