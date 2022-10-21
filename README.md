@@ -34,6 +34,14 @@ The following software needs to be installed and running in order to reproduce t
 ## How to configure VyOS
 After creating a VM from the VyOS image, it will require some configuration to work. VyOS looks for a config.boot file to load after it starts. The provided file can be put into the path `/opt/vyatta/etc/config/config.boot`. However, configuring by hand is better, therefore a config script is provided in the services/vyos directory. The script can simply executed on a fresh VyOS install
 
+## Using docker images in GNS3
+A docker container template can be created the same way as of creating VMs in GNS3. However, the networking part may requires some tweaking esp. in this topology, a docker container should get its IP address from DHCP server. Therefore, after creating the container, edit its networking configuration from GNS3 to be:
+
+```bash
+    auto eth0
+    iface eth0 inet dhcp
+    hostname my-docker-container
+```
 
 
 ## Setup topology
