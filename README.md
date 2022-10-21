@@ -31,6 +31,10 @@ The following software needs to be installed and running in order to reproduce t
 - gns
   + contains anything needed for gns
 
+## How to configure VyOS
+After creating a VM from the VyOS image, it will require some configuration to work. VyOS looks for a config.boot file to load after it starts. The provided file can be put into the path `/opt/vyatta/etc/config/config.boot`. However, configuring by hand is better, therefore a config script is provided in the services/vyos directory. The script can simply executed on a fresh VyOS install
+
+
 
 ## Setup topology
 The current topology looks like below as of now.
