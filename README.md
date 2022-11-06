@@ -51,5 +51,5 @@ The current topology looks like below as of now.
 
 ## Sample process visualization
 
-<img src="/screenshots/process_visual.jpg" alt="Alt text" width="400" 
-     height="500" >
+<img src="/screenshots/process_visual.jpg" alt="Alt text" width="512" 
+     height="384" >
