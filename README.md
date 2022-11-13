@@ -42,6 +42,16 @@ A docker container template can be created the same way as of creating VMs in GN
     iface eth0 inet dhcp
     hostname my-docker-container
 ```
+### How to run Scada-LTS docker image
+- Navigate to services/scada-lts
+- Check the file docker-compose.yml for information
+- Run `dockerc compose up -d`
+
+### How to run OpenPLC docker image
+- Run `docker run -d --privileged -v $PWD/workdir:/workdir -p 8080:8080 -p 502:502 openplc:v3`
+- Make sure you have a directory named workdir in you current directory
+- This command will run a docker container with port 8080(for web GUI) and 502(for Modbus) exposed to the host system
+- There will also be persistent storage for openPLC in order to survive restarts
 
 
 ## Setup topology
