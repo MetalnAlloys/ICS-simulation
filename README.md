@@ -57,7 +57,7 @@ A docker container template can be created the same way as of creating VMs in GN
 ## Setup topology
 The current topology looks like below as of now.
 
-<img src="/screenshots/ics_virt_updated.png" alt="Alt text" >
+<img src="/main/ics_virt_updated.png" alt="Alt text" >
 
 ## Sample process visualization
 
