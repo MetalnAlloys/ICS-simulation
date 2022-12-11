@@ -61,5 +61,5 @@ The current topology looks like below as of now.
 
 ## Sample process visualization
 
-<img src="/screenshots/process_visual.jpg" alt="Alt text" width="512" 
+<img src="/screenshots/ics_virt_updated.jpg" alt="Alt text" width="512" 
      height="384" >
