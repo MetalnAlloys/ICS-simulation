@@ -6,18 +6,21 @@ This repo contains the artefacts, namely configuration files and scripts that wi
 The following software needs to be installed and running in order to reproduce the setup. Make note that this documentation is for the OS running Linux kernels.
 - GNS3: refer to the installatioun documentation for your specific OS (https://docs.gns3.com/docs/getting-started/installation/linux/)
 - QEMU for your target architecture, usually qemu-system-x86_64. Refer to your OS documentation
-- libvirtd - Libvirt deamon for Virtual machines managements 
-  - It will most probably be installed automatically when you install QEMU. Make sure it is started prior to use QEMU
+- libvirtd - Libvirt deamon for Virtual machines management
+  - It will most probably be installed automatically when you install QEMU. Make sure it is started prior to use QEMU e.g. on systemd based Linux kernels use 
+ ```bash
+    systemctl start libvirtd.service
+ ```
   - Otherwise, requires kernel KVM module to be laoded
     + Check your hardware for virtualization/KVM support e.g. use the command
  ```bash
  C_ALL=C lscpu | grep Virtualization
 ``` 
-  - Alternatively, GUI version that I uses is called virt-manager
-- VNCviewer of any kind. I use tigervnc
+  - Alternatively, a program that I use is called virt-manager (https://virt-manager.org/), which is the best option to manage QEMU virtual machines from a desktop GUI.
+- VNCviewer of any kind. I use tigervnc (https://tigervnc.org/)
 - Docker runtime. Check installation instructions at https://docs.docker.com/get-docker/
 
-### Directories key
+### Repo directories key
 - virtual_hardware
   + configurations and info for virtual switch and routers
 - gns_appliances
