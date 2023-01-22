@@ -60,7 +60,7 @@ A docker container template can be created the same way as of creating VMs in GN
 ## Setup topology
 The current topology looks like below as of now. The topology follows the ISA-62443 standard model of zone and conduits
 
-<img src="/main/ics_virt_updated.png" alt="Alt text" >
+<img src=/screenshots/ics_mod4.png" alt="Alt text" >
 
 ## Sample process visualization
 
