@@ -34,7 +34,8 @@ The following software needs to be installed and running in order to reproduce t
 - gns
   + contains anything needed for gns
 
-## How to configure VyOS
+## VyOS
+A VyOS VM in gns3 can be created as a gns3 template. Follow the instruction on https://docs.vyos.io/en/equuleus/installation/virtual/gns3.html#requirements.
 After creating a VM from the VyOS image, it will require some configuration to work. VyOS looks for a config.boot file to load after it starts. The provided file can be put into the path `/opt/vyatta/etc/config/config.boot`. However, configuring by hand is better, therefore a config script is provided in the services/vyos directory. The script can simply executed on a fresh VyOS install
 
 ## Using docker images in GNS3
@@ -46,6 +47,7 @@ A docker container template can be created the same way as of creating VMs in GN
     hostname my-docker-container
 ```
 ### How to run Scada-LTS docker image
+- Create a blank Linux VM ( a minimal linux OS like Alpine linux would be sufficient). GNS3 has apline linux appliance available which you can import directly into your project an install the necessary packages such as docker runtime. The appliance is found at https://gns3.com/marketplace/appliances/open-vswitch. Refer to https://docs.gns3.com/docs/using-gns3/beginners/import-gns3-appliance/ on how to import GNS3 appliances
 - Navigate to services/scada-lts
 - Check the file docker-compose.yml for information
 - Run `dockerc compose up -d`
