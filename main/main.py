@@ -1,5 +1,3 @@
-zsh:1: command not found: lswq
-
 from gns3fy import Gns3Connector, Project, Node, Link
 from tabulate import tabulate
 from pprint import pprint
