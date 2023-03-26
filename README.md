@@ -31,13 +31,13 @@ The following software needs to be installed and running in order to reproduc. M
 - The screenshot below is the target setup for this project 
 - The network topology follows the ISA-62443 standard model of zone and conduits
 
-<img src="/main/ics_mod4.png" alt="Alt text" >
+<img src="/screenshots/ics_mod4.png" alt="Alt text" >
 
 
 ## Sample process visualization
 The following figure shows the sample process that will run inside OpenPLC 
 
-<img src="/main/process_visual.jpg" alt="Alt text" width="512" 
+<img src="/screenshots/process_visual.jpg" alt="Alt text" width="512" 
      height="384" >
 
 
