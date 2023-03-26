@@ -1,0 +1,3 @@
+pydantic==1.9.2
+tabulate
+gns3fy
