@@ -43,7 +43,7 @@ The following figure shows the sample process that will run inside OpenPLC
 
 ## How to deploy (Quick setup)
 1. Make sure all the services i.e. GNS3, docker, and vnc viewer are running
-2. Download the QEMU images (.qcow2 files) from the OneDrive link. Move all
+2. Download the QEMU disks (.qcow2 files) from the given OneDrive link. Move all
    those images to your main GNS3 folder. e.g. /home/user/GNS3/images/QEMU/
 3. Clone this repo and create a python virtual environment (optional)
 ```sh
@@ -68,7 +68,7 @@ The following figure shows the sample process that will run inside OpenPLC
 ### VyOS
 VyOS is used as primary router in this project
 
-A VyOS VM in gns3 can be created as a gns3 template if you did not follow the quick setup or want more control. Follow the instruction on https://docs.vyos.io/en/equuleus/installation/virtual/gns3.html#requirements.
+A VyOS VM in gns3 can be created as a gns3 template if you did not follow the quick setup or want more control over its deployment. Follow the instruction on https://docs.vyos.io/en/equuleus/installation/virtual/gns3.html#requirements. Go to this link for easy instructions on how to deploy VyOS in GNS3 https://docs.vyos.io/en/latest/installation/virtual/gns3.html
 
 After creating a VM from the VyOS image, it will require some configuration to work. VyOS looks for a config.boot file to load after it starts. 
 A config script is provided in the services/vyos directory. The script can simply executed on a fresh VyOS install and it will configure everything for this project. 
@@ -81,11 +81,14 @@ configure
 set service ssh port '22'
 exit
 
-# Find vyos IP address
+# Find vyos IP address on eth0
 ip a
 
 # Now you can use SSH from you host machine OR use scp copy the script
 scp /path/to/script vyos@<IP>:/home/vyos
+
+# Run the config script
+./script.sh
 
 ```
 
